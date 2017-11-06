@@ -92,3 +92,10 @@ PRIMARY KEY(id),
 FOREIGN KEY (gamesId)
     REFERENCES Games(id)
 );
+
+CREATE USER 'Captain'@'%' IDENTIFIED BY 'welcome1';
+
+CREATE TABLE SecretTable (
+    xCoordinate VARCHAR (30),
+    yCoordinate VARCHAR (30),
+    PRIMARY KEY (xCoordinate));
