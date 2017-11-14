@@ -100,4 +100,6 @@ CREATE TABLE SecretTable (
     yCoordinate VARCHAR (30),
     PRIMARY KEY (xCoordinate));
 
+INSERT INTO SecretTable values(320, 650);
+
 GRANT SELECT ON deathstar.SecretTable TO 'Captain'@'%';
