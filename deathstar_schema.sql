@@ -99,3 +99,5 @@ CREATE TABLE SecretTable (
     xCoordinate VARCHAR (30),
     yCoordinate VARCHAR (30),
     PRIMARY KEY (xCoordinate));
+
+GRANT SELECT ON deathstar.SecretTable TO 'Captain'@'%';
