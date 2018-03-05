@@ -53,6 +53,7 @@ instances INTEGER,
 memory VARCHAR(10),
 status VARCHAR(50),
 userName VARCHAR(50),
+version INTEGER,
 PRIMARY KEY(id),
 FOREIGN KEY (gameId)
     REFERENCES Games(id)
