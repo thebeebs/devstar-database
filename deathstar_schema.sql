@@ -59,6 +59,15 @@ FOREIGN KEY (gameId)
     REFERENCES Games(id)
 );
 
+CREATE TABLE Launches (
+id int NOT NULL AUTO_INCREMENT,
+name VARCHAR(100),
+function1Url VARCHAR(300),
+complete BOOLEAN,
+height int,
+PRIMARY KEY(id));
+
+
 CREATE TABLE SquadsMicroservices (
 squadId int,
 microserviceId int,
